@@ -1,7 +1,14 @@
 <template>
   <div id="app">
-    <div class="op" id="tt">
-      <div class="yy"></div>
+    <div class="foo">
+      <footer>
+        <ul>
+          <li><span></span></li>
+          <li><span></span></li>
+          <li><span></span></li>
+          <li><span></span></li>
+        </ul>
+      </footer>
     </div>
   </div>
 </template>
@@ -23,15 +30,26 @@ $r:41.4;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-  .op{
-    width:414rem/$r;
-    height: 736rem/$r;
-    background: red;
-    .yy{
-      width: 240rem/$r;
-      height: 80px;
-      background: pink;
+  .foo{
+    width: 414rem/$r;
+    height: 55.188rem/$r;
+    border-top: 1px solid #eee;
+    position: fixed;
+    bottom: 0px;
+    footer{
+      width: 100%;
+      height: 100%;
+      ul{
+        width: 100%;
+        height: 100%;
+        display:flex;
+        li{
+          float: left;
+          flex: 1;
+        }
+      }
     }
   }
+}
+
 </style>
