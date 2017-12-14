@@ -2,7 +2,7 @@
     <header class="sear-top">
       <div class="opac" :style="{background:'rgba(255,255,255,'+(0+prop1)+')'}">
         <div class="sear-left">
-          <a href="https://www.taobao.com">
+          <a href="">
             <input type="text" readonly='readonly' placeholder="HUAWEI Mate 10 荣耀V10":style="{backgroundColor:'rgba(238,238,238,'+(0.8+prop1)+')'}">
           </a>
         </div>
@@ -31,7 +31,7 @@
     methods:{
       changecolor:function(){
         // 监听scroll的变化 动态改变相应的className
-        if(document.documentElement.scrollTop>110){
+        if(document.documentElement.scrollTop>95||document.body.scrollTop>95){
           document.querySelector('#buicon').className='black-l';
           document.querySelector('#bulogi').className='black-r';
         }else{
