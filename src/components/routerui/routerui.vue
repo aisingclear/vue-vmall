@@ -91,6 +91,7 @@
     position: fixed;
     bottom: 0;
     border-top: 1px solid #eee;
+    background: #fff;
     ul{
       width: 100%;
       height: 100%;

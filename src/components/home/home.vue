@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <searchui :prm="scroll"></searchui>
+    <searchui :prop1="scroll"></searchui>
     <img src="https://res.vmallres.com/pimages//sale/2017-12/20171212185808325.png" alt="" width="414px" height="100%">
     <img src="https://res.vmallres.com/pimages//sale/2017-12/20171212185808325.png" alt="" width="414px" height="100%">
     <img src="https://res.vmallres.com/pimages//sale/2017-12/20171212185808325.png" alt="" width="414px" height="100%">
@@ -20,7 +20,7 @@
     name: "home",
     data(){
       return{
-        scroll: 1,
+        scroll: 0,
       }
     },
     components:{
@@ -29,7 +29,6 @@
     methods:{
       menu() {
         this.scroll = document.documentElement.scrollTop*0.01;
-        console.log(this.scroll)
       }
     },
     mounted: function(){
