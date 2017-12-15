@@ -105,6 +105,7 @@ $r:41.4;
             width: 100%;
             height: 100%;
             color: #000;
+            margin-top: 2rem/$r;
           }
         }
       }
