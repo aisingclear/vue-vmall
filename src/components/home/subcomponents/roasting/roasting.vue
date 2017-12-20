@@ -81,7 +81,7 @@
             auto();
           };
         }
-        addEventListener('transitionend',function(){
+          roastingUl.addEventListener('transitionend',function(){
           roastingUl.className = '';
           if(index==-7){
             index=0;
