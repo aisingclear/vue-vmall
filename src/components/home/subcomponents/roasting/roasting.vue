@@ -122,11 +122,11 @@ $r:41.4;
     height: 220rem/$r;
     overflow: hidden;
     ul.tran{
-      -webkit-transition: margin-left 0.5s;
-      -moz-transition: margin-left 0.5s;
-      -ms-transition: margin-left 0.5s;
-      -o-transition: margin-left 0.5s;
-      transition: margin-left 0.5s;
+      -webkit-transition: margin-left 0.3s;
+      -moz-transition: margin-left 0.3s;
+      -ms-transition: margin-left 0.3s;
+      -o-transition: margin-left 0.3s;
+      transition: margin-left 0.3s;
     }
     ul{
       width: 10000px;
