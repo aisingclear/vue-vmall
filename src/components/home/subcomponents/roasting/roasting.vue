@@ -62,6 +62,7 @@
           var sx = e.changedTouches[0].pageX;
           var sLeft = parseInt( getComputedStyle(roastingUl).marginLeft );
           var sdate =new Date();
+          clearInterval(tmar);
           this.ontouchmove = function(e){
             var mx = e.changedTouches[0].pageX;
             roastingUl.style.marginLeft = mx - sx + sLeft + 'px';
@@ -77,6 +78,7 @@
               roastingUl.style.marginLeft = sLeft + 'px';
             }
             roastingUl.style.marginLeft = -10*htmlFontSize + 10*htmlFontSize*index + 'px';
+            auto();
           };
         }
         addEventListener('transitionend',function(){
@@ -90,20 +92,17 @@
             onli2[i].className = '';
           }
           onli2[Math.abs(index)].className = 'on';
-          console.log(index);
           roastingUl.style.marginLeft = -10*htmlFontSize + 10*htmlFontSize*index + 'px';
         });
-        var automargin = setInterval(function(){
-          index--;
-          roastingUl.className = 'tran';
-          roastingUl.style.marginLeft = -10*htmlFontSize + 10*htmlFontSize*index + 'px';
-        },3000);
-        document.ontouchstart = function(){
-          clearInterval(automargn);
-        };
-        document.ontouchend = function(){
-          automargin();
-        };
+        function auto(){
+          var tmar = setInterval(function(){
+            index--;
+            roastingUl.className = 'tran';
+            roastingUl.style.marginLeft = -10*htmlFontSize + 10*htmlFontSize*index + 'px';
+          },3000);
+          window.tmar = tmar;
+        }
+        auto();
       }
     },
     mounted(){
